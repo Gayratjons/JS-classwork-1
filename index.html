@@ -8,18 +8,19 @@
 </head>
 <body>
     <script>
-        function probel(a) {
-            let b = a.split(" ");
-            let c = "";
-            let d = '';
-            for (let i = 0; i < b.length; i++) {
-                if (b[i] != "" ) {
-                    c = c + b[i] + " ";
-                }
+        function ism(a) {
+            let b = a.split("");
+            let c = '';
+            for (let i = 0; i < b.length; i++) 
+            {
+                if (b[i] == b[i].toUpperCase())
+                {
+                    b[i] = " " + b[i];
+                }  
             }
-            d = c.split("").slice(0, -1);   
-            return d.join("");
+            return b.join("");
         }
+        console.log(ism("UmarUmarJknfvnfvnOkfnvknfnvffKergenkm"));
     </script>
 </body>
 </html>
